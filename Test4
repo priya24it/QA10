@@ -1,0 +1,5 @@
+1.	First name field is empty or null
+	2.	First name contains numeric characters
+	3.	First name contains only numeric characters
+	4.	First name contains special characters
+	5.	First name contains restricted or inappropriate words
