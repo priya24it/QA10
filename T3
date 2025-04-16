@@ -1,0 +1,1 @@
+Records with a first name containing only numeric characters are incorrectly loaded into the landing table. Instead, these records should be identified as errors, an appropriate error message should be recorded, and the data should be loaded into the errors table.”
