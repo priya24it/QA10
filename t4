@@ -1,0 +1,5 @@
+It’s been 1 hour and 35 minutes since the SSH key was activated—thank you for increasing the interval, it has really helped me.
+
+I also had a discussion with Shesh, and he mentioned that the tool is awesome. He did share a couple of suggestions for improvement:
+	1.	User-Specific Workspace: It would be great if, upon logging in (e.g., as user cf00569), a separate folder is automatically created under the EDS project. This way, each user can have their own space. Currently, all users can view and execute queries from other team members, which raises some concerns.
+	2.	Excel Output Optimization: When executing multiple queries (e.g., 10 queries) using the compare functionality, the tool currently generates 10 separate Excel files. This can become overwhelming for the user. A more streamlined output could improve usability.
