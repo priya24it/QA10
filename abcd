@@ -1,0 +1,1 @@
+Hi Nick, I've updated the Rally references for each test case, and I’ve also added the E2E and regression testing scenarios. Error handling is included as part of the test scenarios. For the initial data load, can I set up the data according to the specified scenarios?
