@@ -1,0 +1,60 @@
+User Story: QA Validation of Trips Data Pipeline (SQL Server to BigQuery)
+
+As a QA Engineer,
+I want to validate the ingestion, transformation, and deployment of trips data from SQL Server to BigQuery,
+So that I can ensure data integrity, correct UTC date conversion, PCI compliance, and adherence to functional business requirements.
+
+⸻
+
+Test Scenarios & Expected Outcomes:
+
+⸻
+
+TS001: Validate total trips record count between SQL Server and BigQuery
+Expected Outcome: Record count in BigQuery matches SQL Server after considering filters, deletions, or transformation logic.
+
+⸻
+
+TS002: Validate datetime fields (e.g., trip_start_time, trip_end_time) are converted to UTC
+Expected Outcome: All datetime values in BigQuery are accurately converted to UTC based on original time zone logic.
+
+⸻
+
+TS003: Compare a sample set of trip records between SQL Server and BigQuery
+Expected Outcome: Fields like trip_id, vehicle_id, status, and location details match exactly or as per transformation rules.
+
+⸻
+
+TS004: Verify field-level data integrity for critical columns in trips (e.g., fare, distance, duration)
+Expected Outcome: All critical numeric and categorical fields match or reflect correct calculated values based on business logic.
+
+⸻
+
+TS005: Validate PCI-sensitive parameters (e.g., payment info, card data, PII) are masked or removed
+Expected Outcome: No raw PCI or PII data exists in BigQuery; fields are encrypted, redacted, or excluded per compliance policies.
+
+⸻
+
+TS006: Test action parameter mapping (create, update, delete) from SQL Server to BigQuery
+Expected Outcome: Action parameters in BigQuery correctly reflect the operation type based on source data logic.
+
+⸻
+
+TS007: Validate deployment of pipeline jobs from SQL Server to BigQuery
+Expected Outcome: All ETL/ELT jobs complete successfully with proper logging and without data corruption or schema failures.
+
+⸻
+
+TS008: Run smoke tests after deployment to ensure data availability and transformation success
+Expected Outcome: BigQuery reflects fresh, consistent data with up-to-date snapshots after deployment.
+
+⸻
+
+TS009: Validate schema mapping between SQL Server and BigQuery
+Expected Outcome: All fields are mapped correctly (e.g., data types, names, nullable vs. non-nullable), and schema changes are versioned or documented.
+
+⸻
+
+TS010: Document mismatches, errors, or exceptions during QA and raise issues with reproduction steps
+Expected Outcome: All discrepancies are logged in QA tools (e.g., JIRA, Confluence, TestRail) and tracked to resolution.
+
